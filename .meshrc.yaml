@@ -1,0 +1,7 @@
+sources:
+  - name: gRPC
+    handler:
+      grpc:
+        endpoint: '{env.GRPC_HOST}'
+        metaData:
+          authorization: '{context.headers["Authorization"]}'
